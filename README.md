@@ -10,5 +10,5 @@ Generates Apache2 config files for custom domains.
 - Run the script with `python3 start.py` or `./start.py`
 
 ## Credits
-- Made by @onyxcode
+- Made by [@onyxcode](https://github.com/onyxcode)
 - Thanks to the [Python Help Community](https://discord.gg/python)
