@@ -1,0 +1,4 @@
+*.conf
+dist
+*.egg-info
+build
