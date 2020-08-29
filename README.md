@@ -5,7 +5,7 @@ Generates Apache2 config files for custom domains.
 - Latest version of Python 3
 
 ## Instructions
-- `git clone https://github/com/throw-out-error/apache-dcg.git`
+- `git clone https://github.com/throw-out-error/apache-dcg.git`
 - CD into the folder
 - Run the script with `python3 start.py` or `./start.py`
 
