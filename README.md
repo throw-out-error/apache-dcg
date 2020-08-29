@@ -23,5 +23,5 @@ Running with sudo is only needed if you are reloading the config or copying the 
 
 ## Credits
 
-- Made by [@onyxcode](https://github.com/onyxcode)
+- Made by [@onyxcode](https://github.com/onyxcode) & [@creepinson](https://github.com/creepinson)
 - Thanks to the [Python Help Community](https://discord.gg/python)
