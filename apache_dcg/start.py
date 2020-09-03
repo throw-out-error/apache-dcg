@@ -14,7 +14,7 @@ def proxyConf():
     f.write(
         f"<VirtualHost *:80>\nServerName {domainPrm}\n{serverAlias}\nProxyPass / http://localhost:{portForForward}/\nProxyPassReverse / http://localhost:{portForForward}/\n</VirtualHost>")
     f.close()
-    os.system(f'cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
+    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
 
 
 def regConf():
@@ -25,7 +25,7 @@ def regConf():
     f.write(
         f"<VirtualHost *:80>\nServerName {domainPrm}\n{serverAlias}\nDocumentRoot {webLoc}\nErrorLog ${APACHE_LOG_DIR}/error.log\nCustomLog ${APACHE_LOG_DIR}/access.log combined\n</VirtualHost>")
     f.close()
-    os.system(f'cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
+    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
 
 
 # Domain setup
