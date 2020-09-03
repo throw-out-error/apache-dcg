@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name="apache-dcg",
-    version="0.0.1",
+    version="0.0.2",
     author="Throw Out Error",
     description=("Generates Apache2 config files for custom domains."),
     license="MIT",
