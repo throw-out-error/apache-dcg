@@ -12,7 +12,7 @@ def proxyConf():
         print("Not a valid domain.")
     f = open(f"{domainPrm}.conf", "w")
     f.write(
-        f"<VirtualHost *:80>\nServerName {domainPrm}\nServerAlias www.{domainPrm}\nProxyPass / http://localhost:{portForForward}/\nProxyPassReverse / http://localhost:{portForForward}/\n</VirtualHost>")
+        f"<VirtualHost *:80>\nServerName {domainPrm}\n{serverAlias}\nProxyPass / http://localhost:{portForForward}/\nProxyPassReverse / http://localhost:{portForForward}/\n</VirtualHost>")
     f.close()
     os.system(f'cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
 
