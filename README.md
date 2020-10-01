@@ -2,6 +2,8 @@
 
 Generates Apache2 config files for custom domains.
 
+[![Open Source Helpers](https://www.codetriage.com/throw-out-error/apache-dcg/badges/users.svg)](https://www.codetriage.com/throw-out-error/apache-dcg)
+
 ## Prerequisites
 
 - Latest version of Python 3
