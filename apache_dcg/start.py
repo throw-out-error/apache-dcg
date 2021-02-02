@@ -14,7 +14,10 @@ def proxyConf():
     f.write(
         f"<VirtualHost *:80>\nServerName {domainPrm}\n{serverAlias}\nProxyPass / http://localhost:{portForForward}/\nProxyPassReverse / http://localhost:{portForForward}/\n</VirtualHost>")
     f.close()
-    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
+    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-avalible/{domainPrm}.conf')
+    os.system("a2enmod proxy")
+    os.system("a2enmod proxy_http")
+    os.system(f"a2ensite {domainPrm}")
 
 
 def regConf():
@@ -25,7 +28,8 @@ def regConf():
     f.write(
         f"<VirtualHost *:80>\nServerName {domainPrm}\n{serverAlias}\nDocumentRoot {webLoc}\nErrorLog ${APACHE_LOG_DIR}/error.log\nCustomLog ${APACHE_LOG_DIR}/access.log combined\n</VirtualHost>")
     f.close()
-    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-enabled/{domainPrm}.conf')
+    os.system(f'sudo cp {domainPrm}.conf {apcPa}/sites-avalible/{domainPrm}.conf')
+    os.system(f"a2ensite {domainPrm}")
 
 
 # Domain setup
